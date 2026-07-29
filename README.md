@@ -1,5 +1,7 @@
 # IELTS Spelling Master 🎯🎧
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://your-username.github.io/ielts-spelling-master/)
+
 **IELTS Spelling Master** is a lightning-fast, open-source audio dictation web application built specifically to help IELTS candidates eliminate careless spelling errors in the Listening test. 
 
 It simulates real test conditions by speaking target words aloud, records your spelling, and provides surgical letter-by-letter breakdown analysis to help you master common traps (like double consonants and silent letters).
@@ -37,3 +39,6 @@ ielts-spelling-master/
 ├── styles.css       # Complete application styling and animations
 ├── words.js         # Curated IELTS trap-word database (Easy, Medium, Hard)
 └── app.js           # Core logic, audio engine, diff algorithm, and state handler
+
+📝 License
+This project is open-source and available under the MIT License. Feel free to use, modify, and share it with fellow IELTS aspirants.
