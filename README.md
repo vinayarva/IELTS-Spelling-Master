@@ -1,6 +1,6 @@
 # IELTS Spelling Master 🎯🎧
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://your-username.github.io/ielts-spelling-master/)
+[https://your-username.github.io/ielts-spelling-master/](https://vinayarva.github.io/IELTS-Spelling-Master/)
 
 **IELTS Spelling Master** is a lightning-fast, open-source audio dictation web application built specifically to help IELTS candidates eliminate careless spelling errors in the Listening test. 
 
