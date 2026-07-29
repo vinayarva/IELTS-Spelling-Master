@@ -6,6 +6,11 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="image.png" width="850" alt="Home Screen">
+</p>
+
+
 **IELTS Spelling Master** is a lightning-fast, open-source audio dictation web application built specifically to help IELTS candidates eliminate careless spelling errors in the IELTS Listening test.
 
 👉 **Live Demo:** https://vinayarva.github.io/IELTS-Spelling-Master/
