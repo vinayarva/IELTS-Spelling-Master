@@ -1,4 +1,4 @@
-const DB_EXPANDED = [
+const DB= [
   // EASY: Months, Days, Seasons & Times
   ["january","easy"],["march","easy"],["april","easy"],["may","easy"],["june","easy"],
   ["july","easy"],["august","easy"],["september","easy"],["october","easy"],["november","easy"],
