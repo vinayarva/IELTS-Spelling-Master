@@ -2,13 +2,13 @@
 
 <p align="center">
   <a href="https://vinayarva.github.io/IELTS-Spelling-Master/">
-    <img src="https://img.shields.io/badge/🚀%20Try%20Live%20Demo-IELTS%20Spelling%20Master-blue?style=for-the-badge" alt="Live Demo">
+    <img src="https://img.shields.io/badge/🚀%20Try%20Live%20Demo-IELTS%20Spelling%20Master-blue?style=for-the-badge" alt="Live">
   </a>
 </p>
 
 **IELTS Spelling Master** is a lightning-fast, open-source audio dictation web application built specifically to help IELTS candidates eliminate careless spelling errors in the IELTS Listening test.
 
-👉 **Live Demo:** https://vinayarva.github.io/IELTS-Spelling-Master/
+👉 **Live:** https://vinayarva.github.io/IELTS-Spelling-Master/
 
 It simulates real test conditions by speaking target words aloud, records your spelling, and provides surgical letter-by-letter breakdown analysis to help you master common traps (like double consonants and silent letters).
 
