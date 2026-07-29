@@ -1,4 +1,47 @@
-const DB= [
+
+const DB_01 = [
+  // EASY
+  ["believe","easy"],["receive","easy"],["definitely","easy"],["separate","easy"],["necessary","easy"],
+  ["government","easy"],["immediately","easy"],["achievement","easy"],["environment","easy"],["february","easy"],
+  ["wednesday","easy"],["calendar","easy"],["restaurant","easy"],["vegetable","easy"],["temperature","easy"],
+  ["foreign","easy"],["neighbour","easy"],["colleague","easy"],["committee","easy"],["occasion","easy"],
+  ["address","easy"],["argument","easy"],["business","easy"],["career","easy"],["category","easy"],
+  ["changeable","easy"],["coming","easy"],["criticise","easy"],["definite","easy"],["describe","easy"],
+  ["develop","easy"],["disappear","easy"],["disappoint","easy"],["embarrass","easy"],["exercise","easy"],
+  ["experience","easy"],["familiar","easy"],["forty","easy"],["grammar","easy"],["guarantee","easy"],["height","easy"],
+
+  // MEDIUM
+  ["accommodate","medium"],["questionnaire","medium"],["entrepreneur","medium"],["bureaucracy","medium"],
+  ["phenomenon","medium"],["rhythm","medium"],["occurrence","medium"],["apparent","medium"],["existence","medium"],
+  ["maintenance","medium"],["privilege","medium"],["tomorrow","medium"],["weird","medium"],["parliament","medium"],
+  ["pronunciation","medium"],["curriculum","medium"],["laboratory","medium"],["prejudice","medium"],["subtle","medium"],
+  ["technique","medium"],["unnecessary","medium"],["withhold","medium"],["acknowledgment","medium"],["aggressive","medium"],
+  ["amateur","medium"],["appearance","medium"],["athlete","medium"],["auxiliary","medium"],["awkward","medium"],
+  ["cemetery","medium"],["commitment","medium"],["comparative","medium"],["competent","medium"],["conscience","medium"],
+  ["conscious","medium"],["consensus","medium"],["controversy","medium"],["correlate","medium"],["criticism","medium"],
+  ["deceive","medium"],["dependent","medium"],["desperate","medium"],["deteriorate","medium"],["disastrous","medium"],
+  ["discipline","medium"],["exaggerate","medium"],["exhilarate","medium"],["extraordinary","medium"],["fascinating","medium"],
+  ["fluorescent","medium"],["harass","medium"],["hierarchy","medium"],["humorous","medium"],["hygiene","medium"],
+  ["independent","medium"],["indispensable","medium"],["inevitable","medium"],["intelligence","medium"],["interrupt","medium"],
+  ["irrelevant","medium"],["jewellery","medium"],
+
+  // HARD
+  ["idiosyncrasy","hard"],["hypocrisy","hard"],["inoculate","hard"],["liaison","hard"],["manoeuvre","hard"],
+  ["medieval","hard"],["memento","hard"],["miscellaneous","hard"],["mischievous","hard"],["misspell","hard"],
+  ["negotiate","hard"],["noticeable","hard"],["nuisance","hard"],["obedience","hard"],["omission","hard"],
+  ["outrageous","hard"],["pamphlet","hard"],["pastime","hard"],["perceive","hard"],["perseverance","hard"],
+  ["personnel","hard"],["persuade","hard"],["philosophy","hard"],["playwright","hard"],["possess","hard"],
+  ["precede","hard"],["predictable","hard"],["professor","hard"],["psychology","hard"],["publicly","hard"],
+  ["pursue","hard"],["receipt","hard"],["recommend","hard"],["referred","hard"],["reminiscent","hard"],
+  ["renowned","hard"],["repetition","hard"],["ridiculous","hard"],["sacrilegious","hard"],["satellite","hard"],
+  ["secretary","hard"],["seize","hard"],["sergeant","hard"],["siege","hard"],["sovereign","hard"],
+  ["statistics","hard"],["stubbornness","hard"],["subtlety","hard"],["supersede","hard"],["surveillance","hard"],
+  ["susceptible","hard"],["symmetry","hard"],["tendency","hard"],["thorough","hard"],["threshold","hard"],
+  ["transferred","hard"],["twelfth","hard"],["unanimous","hard"],["unforeseen","hard"],["vacuum","hard"],["yacht","hard"]
+]
+
+
+const DB_02 = [
   // EASY: Months, Days, Seasons & Times
   ["january","easy"],["march","easy"],["april","easy"],["may","easy"],["june","easy"],
   ["july","easy"],["august","easy"],["september","easy"],["october","easy"],["november","easy"],
@@ -212,4 +255,150 @@ const DB= [
   ["cancelling","hard"],["modelling","hard"],["signalling","hard"],["quarrelling","hard"],["fuelling","hard"],
   ["aluminium","hard"],["paediatrics","hard"],["orthopaedics","hard"],["gynaecology","hard"],["foetus","hard"],
   ["anaemia","hard"],["leukaemia","hard"]
-].map(([w,d],i)=>({ id:"new_w"+i, word:w, difficulty:d }));
+]
+
+
+const DB_03 = [
+  // EASY: Travel, Transport & Tourism
+  ["passport","easy"],["luggage","easy"],["baggage","easy"],["passenger","easy"],["departure","easy"],
+  ["arrival","easy"],["customs","easy"],["immigration","easy"],["souvenir","easy"],["excursion","easy"],
+  ["reception","easy"],["boarding","easy"],["ticket","easy"],["flight","easy"],["destination","easy"],
+  ["cruise","easy"],["currency","easy"],["brochure","easy"],["cancellation","easy"],["insurance","easy"],
+  ["transit","easy"],["platform","easy"],["delay","easy"],["commute","easy"],["cabins","easy"],
+
+  // EASY: Home, Living & Appliances
+  ["furniture","easy"],["upholstery","easy"],["balcony","easy"],["basement","easy"],["attic","easy"],
+  ["corridor","easy"],["escalator","easy"],["elevator","easy"],["appliance","easy"],["microwave","easy"],
+  ["refrigerator","easy"],["mattress","easy"],["wardrobe","easy"],["cupboard","easy"],["radiator","easy"],
+  ["faucet","easy"],["fireplace","easy"],["cushion","easy"],["blanket","easy"],["curtain","easy"],
+
+  // EASY: Materials, Shapes & Colours
+  ["plastic","easy"],["leather","easy"],["cotton","easy"],["wool","easy"],["silk","easy"],
+  ["nylon","easy"],["polyester","easy"],["denim","easy"],["velvet","easy"],["timber","easy"],
+  ["concrete","easy"],["cement","easy"],["rectangle","easy"],["triangle","easy"],["circle","easy"],
+  ["sphere","easy"],["cylinder","easy"],["pyramid","easy"],["cone","easy"],["oval","easy"],
+  ["turquoise","easy"],["magenta","easy"],["crimson","easy"],["indigo","easy"],["beige","easy"],["maroon","easy"],
+
+  // EASY: Additional Common IELTS Names
+  ["anthony","easy"],["christopher","easy"],["stephen","easy"],["jonathan","easy"],["nicholas","easy"],
+  ["samuel","easy"],["benjamin","easy"],["nathan","easy"],["timothy","easy"],["vincent","easy"],
+  ["amanda","easy"],["jessica","easy"],["melissa","easy"],["stephanie","easy"],["rebecca","easy"],
+  ["michelle","easy"],["kimberly","easy"],["angela","easy"],["heather","easy"],["rachel","easy"],
+  ["carolyn","easy"],["janet","easy"],["diane","easy"],["pamela","easy"],["evelyn","easy"],["shirley","easy"],
+
+  // MEDIUM: Food, Dining & Ingredients
+  ["catering","medium"],["recipe","medium"],["ingredient","medium"],["appetizer","medium"],["dessert","medium"],
+  ["beverage","medium"],["vegetarian","medium"],["vegan","medium"],["cereal","medium"],["dairy","medium"],
+  ["poultry","medium"],["seafood","medium"],["biscuit","medium"],["chocolate","medium"],["vanilla","medium"],
+  ["strawberry","medium"],["cinnamon","medium"],["garlic","medium"],["onion","medium"],["pepper","medium"],
+  ["mushroom","medium"],["broccoli","medium"],["spinach","medium"],["lettuce","medium"],["tomato","medium"],
+  ["potato","medium"],["avocado","medium"],["croissant","medium"],["spaghetti","medium"],["macaroni","medium"],
+
+  // MEDIUM: Business & Finance
+  ["mortgage","medium"],["loan","medium"],["overdraft","medium"],["investment","medium"],["inflation","medium"],
+  ["bankruptcy","medium"],["revenue","medium"],["profit","medium"],["deficit","medium"],["transaction","medium"],
+  ["retail","medium"],["wholesale","medium"],["commercial","medium"],["enterprise","medium"],["corporation","medium"],
+  ["dividend","medium"],["equity","medium"],["shareholder","medium"],["asset","medium"],["liability","medium"],
+  ["audit","medium"],["budget","medium"],["currency","medium"],["pension","medium"],["allowance","medium"],
+
+  // MEDIUM: Hobbies, Sports & Entertainment
+  ["swimming","medium"],["cycling","medium"],["badminton","medium"],["cricket","medium"],["championship","medium"],
+  ["marathon","medium"],["leisure","medium"],["recreation","medium"],["orchestra","medium"],["instrument","medium"],
+  ["gymnastics","medium"],["concert","medium"],["cinema","medium"],["festival","medium"],["carnival","medium"],
+
+  // MEDIUM: Additional Countries & Cities
+  ["sweden","medium"],["norway","medium"],["denmark","medium"],["finland","medium"],["switzerland","medium"],
+  ["austria","medium"],["belgium","medium"],["netherlands","medium"],["portugal","medium"],["greece","medium"],
+  ["turkey","medium"],["china","medium"],["japan","medium"],["korea","medium"],["thailand","medium"],
+  ["vietnam","medium"],["malaysia","medium"],["singapore","medium"],["indonesia","medium"],["philippines","medium"],
+  ["india","medium"],["pakistan","medium"],["bangladesh","medium"],["srilanka","medium"],["brazil","medium"],
+  ["argentina","medium"],["colombia","medium"],["peru","medium"],["chile","medium"],["venezuela","medium"],
+  ["kenya","medium"],["nigeria","medium"],["southafrica","medium"],["morocco","medium"],["zimbabwe","medium"],
+  ["sydney","medium"],["adelaide","medium"],["perth","medium"],["hobart","medium"],["darwin","medium"],
+  ["canberra","medium"],["boston","medium"],["miami","medium"],["dallas","medium"],["houston","medium"],
+  ["detroit","medium"],["atlanta","medium"],
+
+  // HARD: Common IELTS Spelling Traps
+  ["acquire","hard"],["absence","hard"],["acceptable","hard"],["accidentally","hard"],["achieve","hard"],
+  ["across","hard"],["basically","hard"],["beginning","hard"],["belief","hard"],["bizarre","hard"],
+  ["caribbean","hard"],["column","hard"],["collectible","hard"],["completely","hard"],["condemn","hard"],
+  ["daiquiri","hard"],["diarrhoea","hard"],["dilemma","hard"],["ecstasy","hard"],["equipment","hard"],
+  ["exceed","hard"],["fiery","hard"],["gauge","hard"],["grateful","hard"],["ignorance","hard"],
+  ["implement","hard"],["judgment","hard"],["lightning","hard"],["marshmallow","hard"],["miniature","hard"],
+  ["minuscule","hard"],["parallel","hard"],["piece","hard"],["pigeon","hard"],["presence","hard"],
+  ["queue","hard"],["raspberry","hard"],["rhyme","hard"],["tyranny","hard"],["until","hard"],
+  ["weather","hard"],["writing","hard"],["whether","hard"],["breathe","hard"],["breath","hard"],
+
+  // HARD: British Suffixes (-ise, -ogue, etc.)
+  ["catalogue","hard"],["dialogue","hard"],["epilogue","hard"],["monologue","hard"],["categorise","hard"],
+  ["civilise","hard"],["colonise","hard"],["computerise","hard"],["dramatise","hard"],["empathise","hard"],
+  ["harmonise","hard"],["hypnotise","hard"],["idolise","hard"],["jeopardise","hard"],["legalise","hard"],
+  ["maximise","hard"],["minimise","hard"],["mobilise","hard"],["optimise","hard"],["patronise","hard"],
+  ["penalise","hard"],["polarise","hard"],["prioritise","hard"],["rationalise","hard"],["revolutionise","hard"],
+  ["scrutinise","hard"],["socialise","hard"],["specialise","hard"],["standardise","hard"],["summarise","hard"],
+  ["symbolise","hard"],["sympathise","hard"],["terrorise","hard"],["vandalise","hard"],["visualise","hard"],
+  ["agonise","hard"],["acclimatise","hard"],["mediaeval","hard"],["tyre","hard"],["pyjamas","hard"]
+]
+
+
+const DB_04 = [
+  // EASY: Clothing, Accessories & Personal Items
+  ["trousers","easy"],["uniform","easy"],["helmet","easy"],["backpack","easy"],["briefcase","easy"],
+  ["wallet","easy"],["purse","easy"],["umbrella","easy"],["sunglasses","easy"],["sweater","easy"],
+  ["jacket","easy"],["sandals","easy"],["sneakers","easy"],["jumper","easy"],["cardigan","easy"],
+  ["necklace","easy"],["bracelet","easy"],["earrings","easy"],["scarf","easy"],["boots","easy"],
+
+  // EASY: Common Surnames (Frequently spelled out in Listening Section 1)
+  ["smith","easy"],["johnson","easy"],["williams","easy"],["brown","easy"],["taylor","easy"],
+  ["davis","easy"],["evans","easy"],["thomas","easy"],["roberts","easy"],["clarke","easy"],
+  ["wright","easy"],["robinson","easy"],["thompson","easy"],["white","easy"],["hughes","easy"],
+  ["edwards","easy"],["green","easy"],["hall","easy"],["lewis","easy"],["harris","easy"],
+
+  // EASY: Buildings, Housing & Places
+  ["cottage","easy"],["bungalow","easy"],["hostel","easy"],["skyscraper","easy"],["factory","easy"],
+  ["supermarket","easy"],["pharmacy","easy"],["bakery","easy"],["butcher","easy"],["garage","easy"],
+  ["lighthouse","easy"],["windmill","easy"],["detached","easy"],["mansion","easy"],["studio","easy"],
+
+  // MEDIUM: Office, Stationery & Workplace
+  ["stationery","medium"],["envelope","medium"],["clipboard","medium"],["stapler","medium"],["photocopier","medium"],
+  ["projector","medium"],["folder","medium"],["document","medium"],["signature","medium"],["printer","medium"],
+  ["scanner","medium"],["paperclip","medium"],["whiteboard","medium"],["cubicle","medium"],["boardroom","medium"],
+  ["cartridge","medium"],["briefing","medium"],["newsletter","medium"],["bulletin","medium"],["workforce","medium"],
+
+  // MEDIUM: Vehicles, Transport & Infrastructure
+  ["helicopter","medium"],["ferry","medium"],["submarine","medium"],["scooter","medium"],["tractor","medium"],
+  ["ambulance","medium"],["carriage","medium"],["tram","medium"],["subway","medium"],["gondola","medium"],
+  ["hovercraft","medium"],["spaceship","medium"],["shuttle","medium"],["caravan","medium"],["lorry","medium"],
+  ["minibus","medium"],["roundabout","medium"],["intersection","medium"],["pedestrian","medium"],["pavement","medium"],
+
+  // MEDIUM: Weather, Environment & Nature
+  ["humidity","medium"],["forecast","medium"],["precipitation","medium"],["breeze","medium"],["hurricane","medium"],
+  ["tornado","medium"],["thermometer","medium"],["barometer","medium"],["meteorology","medium"],["frost","medium"],
+  ["mist","medium"],["thunder","medium"],["overcast","medium"],["peninsula","medium"],["archipelago","medium"],
+  ["canyon","medium"],["plateau","medium"],["waterfall","medium"],["rainforest","medium"],["oasis","medium"],
+
+  // MEDIUM: Arts, Crafts & Hobbies
+  ["sculpture","medium"],["portrait","medium"],["canvas","medium"],["ceramics","medium"],["pottery","medium"],
+  ["acoustic","medium"],["classical","medium"],["knitting","medium"],["sewing","medium"],["painting","medium"],
+  ["sketching","medium"],["origami","medium"],["calligraphy","medium"],["mosaic","medium"],["tapestry","medium"],
+
+  // HARD: Double Consonant Traps & Tricky Adverbs
+  ["occasionally","hard"],["successfully","hard"],["sincerely","hard"],["faithfully","hard"],["beautifully","hard"],
+  ["wonderfully","hard"],["terribly","hard"],["horribly","hard"],["necessarily","hard"],["ironically","hard"],
+  ["stubbornly","hard"],["aggravate","hard"],["alleviate","hard"],["assassinate","hard"],["commemorate","hard"],
+  ["interrogate","hard"],["commission","hard"],["successful","hard"],["succession","hard"],["squirrel","hard"],
+
+  // HARD: The "-ible" vs "-able" Suffix Trap
+  ["accessible","hard"],["discernible","hard"],["illegible","hard"],["invincible","hard"],["feasible","hard"],
+  ["plausible","hard"],["audible","hard"],["edible","hard"],["credible","hard"],["compatible","hard"],
+  ["flexible","hard"],["terrible","hard"],["horrible","hard"],["visible","hard"],["tangible","hard"],
+  ["valuable","hard"],["profitable","hard"],["unbelievable","hard"],["knowledgeable","hard"],["indispensable","hard"],
+
+  // HARD: Homophones and Commonly Confused Pairs
+  ["principal","hard"],["principle","hard"],["counsel","hard"],["council","hard"],["desert","hard"],
+  ["loose","hard"],["lose","hard"],["affect","hard"],["effect","hard"],["complement","hard"],
+  ["compliment","hard"],["altogether","hard"],["already","hard"],["descent","hard"],["dissent","hard"],
+  ["elicit","hard"],["illicit","hard"],["proceed","hard"],["stationery","hard"],["stationary","hard"]
+
+]
+const DB = [...DB_01, ...DB_02, ...DB_03,...DB_04].map(([w,d],i)=>({ id:"new_w"+i, word:w, difficulty:d }));
